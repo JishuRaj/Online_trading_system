@@ -4,7 +4,7 @@ const user = require('../../models/users_model')
 
 
 route.get('/users', (req,res)=>{
-  res.json('bhag bc')
+  res.json('new')
 })
 route.post('/users', async (req, res , next)=>{
   console.log(req.body)
