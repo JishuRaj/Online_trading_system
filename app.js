@@ -4,11 +4,15 @@ const mongoose = require('mongoose')
 const bodyparser = require('body-parser')
 const userroute = require('./routes/admin/user')
 const companyroute = require('./routes/admin/companies')
-
+const registerroute = require('./routes/user/register')
+const loginroute = require('./routes/user/login')
+require('dotenv').config()
 // app.get('/', (req, res)=>{
 //   res.send('get lost')
 // })
 app.use(bodyparser.json())
+app.use('/',[registerroute, loginroute])
+
 app.use('/admin',[userroute,companyroute])
 
 
