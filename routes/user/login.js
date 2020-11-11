@@ -9,7 +9,7 @@ const user = require('../../models/register_model')
 
 
 route.get('/login', (req,res)=>{
-  res.send('ohh fuck again')
+  res.send('ohh again')
 })
 
 route.post('/login', async (req, res)=>{
