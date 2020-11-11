@@ -8,9 +8,9 @@ const saltRounds = 10;
 const user = require('../../models/register_model')
 
 
-// route.get('/register', (req,res)=>{
-//   res.send('ohh fuck')
-// })
+route.get('/register', (req,res)=>{
+  res.send('hii')
+})
 
 route.post('/register', async (req, res, next)=>{
   console.log(req.body)
